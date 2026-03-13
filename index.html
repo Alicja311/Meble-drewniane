@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atelier Drewna | Customowe Meble</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#faf8f5;
+color:#2b2b2b;
+line-height:1.6;
+}
+
+h1,h2,h3{
+font-family:'Playfair Display',serif;
+font-weight:600;
+letter-spacing:1px;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+/* NAV */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 0;
+}
+
+.logo{
+font-size:24px;
+font-weight:600;
+letter-spacing:2px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:40px;
+}
+
+nav a{
+text-decoration:none;
+color:#333;
+font-size:14px;
+letter-spacing:1px;
+}
+
+/* HERO */
+
+.hero{
+height:80vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),
+url("https://images.unsplash.com/photo-1582582429416-4e9b50f2b7b1") center/cover;
+color:white;
+}
+
+.hero h1{
+font-size:56px;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:600px;
+margin:auto;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 32px;
+background:#8b6b4f;
+color:white;
+text-decoration:none;
+letter-spacing:1px;
+font-size:14px;
+}
+
+/* ABOUT */
+
+.about{
+padding:100px 0;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:6px;
+}
+
+/* PRODUCTS */
+
+.products{
+padding:100px 0;
+background:white;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:60px;
+font-size:36px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+.card img{
+width:100%;
+height:280px;
+object-fit:cover;
+border-radius:6px;
+margin-bottom:15px;
+}
+
+.card h3{
+font-size:20px;
+}
+
+/* PROCESS */
+
+.process{
+padding:100px 0;
+}
+
+.steps{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:40px;
+text-align:center;
+}
+
+.step-number{
+font-size:40px;
+color:#8b6b4f;
+margin-bottom:10px;
+}
+
+/* CONTACT */
+
+.contact{
+background:#1e1e1e;
+color:white;
+padding:100px 0;
+text-align:center;
+}
+
+.contact p{
+margin:10px 0;
+}
+
+/* FOOTER */
+
+footer{
+background:#111;
+color:#aaa;
+text-align:center;
+padding:25px;
+font-size:14px;
+}
+
+@media(max-width:900px){
+
+.about{
+grid-template-columns:1fr;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.steps{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<nav>
+<div class="logo">ATELIER DREWNA</div>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">O nas</a></li>
+<li><a href="#">Meble</a></li>
+<li><a href="#">Proces</a></li>
+<li><a href="#">Kontakt</a></li>
+</ul>
+</nav>
+</div>
+
+
+<section class="hero">
+<div>
+<h1>Customowe Meble Drewniane</h1>
+<p>Projektujemy i tworzymy unikalne meble z litego drewna dla najbardziej wymagających wnętrz.</p>
+<a href="#" class="btn">Zamów projekt</a>
+</div>
+</section>
+
+
+<section class="about container">
+<div>
+<h2>Rzemiosło i perfekcja</h2>
+<p>
+Każdy mebel powstaje w naszej pracowni z najwyższej jakości drewna.
+Łączymy tradycyjne rzemiosło stolarskie z nowoczesnym designem,
+tworząc meble, które przetrwają pokolenia.
+</p>
+</div>
+
+<img src="https://images.unsplash.com/photo-1505693314120-0d443867891c">
+</section>
+
+
+<section class="products">
+<div class="container">
+
+<h2 class="section-title">Nasze realizacje</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1598300053653-33d4c0a7e4fb">
+<h3>Stoły z litego dębu</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1618220179428-22790b461013">
+<h3>Szafy na wymiar</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1615873968403-89e068629265">
+<h3>Biblioteki drewniane</h3>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section class="process container">
+
+<h2 class="section-title">Proces realizacji</h2>
+
+<div class="steps">
+
+<div>
+<div class="step-number">01</div>
+<h3>Konsultacja</h3>
+<p>Rozmawiamy o Twojej wizji, stylu wnętrza i potrzebach.</p>
+</div>
+
+<div>
+<div class="step-number">02</div>
+<h3>Projekt</h3>
+<p>Tworzymy indywidualny projekt dopasowany do przestrzeni.</p>
+</div>
+
+<div>
+<div class="step-number">03</div>
+<h3>Realizacja</h3>
+<p>Ręcznie wykonujemy mebel w naszej pracowni.</p>
+</div>
+
+</div>
+</section>
+
+
+<section class="contact">
+<div class="container">
+
+<h2 class="section-title">Kontakt</h2>
+
+<p>Email: kontakt@atelierdrewna.pl</p>
+<p>Telefon: +48 500 000 000</p>
+<p>Warsztat: Warszawa, Polska</p>
+
+</div>
+</section>
+
+
+<footer>
+© 2026 Atelier Drewna — All rights reserved
+</footer>
+
+</body>
+</html>
